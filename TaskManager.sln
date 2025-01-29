@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain.csproj", "{B69F734C-C89B-41ED-8047-9AC9697A5181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Application", "TaskManager.Application\TaskManager.Application.csproj", "{7FDB1C08-9970-469C-B0D1-AD43040DFA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Infrastructure", "TaskManager.Infrastructure\TaskManager.Infrastructure.csproj", "{CFB40193-2774-4C05-967C-195355656C94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.API", "TaskManager.API\TaskManager.API.csproj", "{FF2C594A-8345-4464-B77D-3DE9630C8E11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA0D8C57-43E6-43AC-A747-1B7AA3C91DA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE9DF312-B701-4FCD-8886-B1C7AF8D4C2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.UnitTests", "TaskManager.UnitTests\TaskManager.UnitTests.csproj", "{ECC1F9DB-F753-4DD3-8805-4318675CFAD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.IntegrationTests", "TaskManager.IntegrationTests\TaskManager.IntegrationTests.csproj", "{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B69F734C-C89B-41ED-8047-9AC9697A5181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69F734C-C89B-41ED-8047-9AC9697A5181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69F734C-C89B-41ED-8047-9AC9697A5181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69F734C-C89B-41ED-8047-9AC9697A5181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FDB1C08-9970-469C-B0D1-AD43040DFA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FDB1C08-9970-469C-B0D1-AD43040DFA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FDB1C08-9970-469C-B0D1-AD43040DFA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FDB1C08-9970-469C-B0D1-AD43040DFA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB40193-2774-4C05-967C-195355656C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB40193-2774-4C05-967C-195355656C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB40193-2774-4C05-967C-195355656C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB40193-2774-4C05-967C-195355656C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2C594A-8345-4464-B77D-3DE9630C8E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2C594A-8345-4464-B77D-3DE9630C8E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2C594A-8345-4464-B77D-3DE9630C8E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2C594A-8345-4464-B77D-3DE9630C8E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC1F9DB-F753-4DD3-8805-4318675CFAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC1F9DB-F753-4DD3-8805-4318675CFAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC1F9DB-F753-4DD3-8805-4318675CFAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC1F9DB-F753-4DD3-8805-4318675CFAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF2C594A-8345-4464-B77D-3DE9630C8E11} = {EE9DF312-B701-4FCD-8886-B1C7AF8D4C2B}
+		{7FDB1C08-9970-469C-B0D1-AD43040DFA98} = {EE9DF312-B701-4FCD-8886-B1C7AF8D4C2B}
+		{B69F734C-C89B-41ED-8047-9AC9697A5181} = {EE9DF312-B701-4FCD-8886-B1C7AF8D4C2B}
+		{CFB40193-2774-4C05-967C-195355656C94} = {EE9DF312-B701-4FCD-8886-B1C7AF8D4C2B}
+		{ECC1F9DB-F753-4DD3-8805-4318675CFAD9} = {EA0D8C57-43E6-43AC-A747-1B7AA3C91DA4}
+		{8ED02E9D-6978-4A75-9B52-AEAC27BA1BED} = {EA0D8C57-43E6-43AC-A747-1B7AA3C91DA4}
+	EndGlobalSection
+EndGlobal
