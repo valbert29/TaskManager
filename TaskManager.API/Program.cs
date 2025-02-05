@@ -1,7 +1,9 @@
-using System.Net.Mime;
 using AutoMapper;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using TaskManager.Application;
+using TaskManager.Application.Validators;
 using TaskManager.Infrastructure;
 using TaskManager.Infrastructure.Data;
 
@@ -10,6 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddApplication() // Подключение Application Layer (MediatR, AutoMapper)
     .AddInfrastructure(builder.Configuration); // Подключение Infrastructure (EF Core, PostgreSQL)
+
+builder.Services
+    .AddFluentValidationAutoValidation()
+    .AddFluentValidationClientsideAdapters();
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateTaskCommandValidator>();
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
@@ -28,6 +36,11 @@ using (var scope = app.Services.CreateScope())
     var mapper = serviceProvider.GetRequiredService<IMapper>();
     mapper.ConfigurationProvider.AssertConfigurationIsValid(); // Проверка маппинга
 }
+
+app.UseExceptionHandler(exceptionHandlerApp 
+    => exceptionHandlerApp.Run(async context 
+        => await Results.Problem()
+            .ExecuteAsync(context)));
 
 // Конфигурация конвейера middleware
 if (app.Environment.IsDevelopment())
